@@ -147,6 +147,24 @@
         >
           Primary
         </button>
+        <h5>Delivery Methods</h5>
+        <button
+          type="button"
+          class="btn btn-outline-primary"
+          style="width: 50%"
+        >
+          Primary
+        </button>
+        <button
+          type="button"
+          class="btn btn-outline-primary"
+          style="width: 50%"
+        >
+          Primary
+        </button>
+        <p>SMS (contact us to enable this method)</p>
+        <p>MS Teams (contact us to enable this method)</p>
+        <p>Zoom (contact us to enable this method)</p>
       </div>
     </div>
   </div>
