@@ -44,20 +44,20 @@ export default {
         />
       </div>
       <div class="col-6">
-        2 of 3 (wider)
         <h3>Edit User</h3>
         <button type="button" class="btn btn-outline-primary">
           Submit Changes
         </button>
+        <h6>Light</h6>
         <label class="switch">
           <input type="checkbox" onchange="darkMode()" />
           <span class="slider round"></span>
         </label>
+        <h6>Dark</h6>
       </div>
-      <div class="col">3 of 3</div>
+      <div class="col">Re-Connect Linkedin Profile</div>
       <div class="row">
         <div class="col">
-          1 of 3
           <div class="mb-3">
             <label
               type="text"
@@ -104,7 +104,6 @@ export default {
           </div>
         </div>
         <div class="col">
-          2 of 3 (wider)
           <div class="mb-3">
             <label for="formGroupExampleInput" class="form-label">Email</label>
             <input
@@ -158,39 +157,40 @@ export default {
           </div>
         </div>
         <div class="col">
-          3 of 3
           <h5>Alert Types</h5>
-          <button type="button" class="btn btn-outline-primary">Primary</button>
-          <button type="button" class="btn btn-outline-primary">Primary</button>
-          <button type="button" class="btn btn-outline-primary">Primary</button>
-          <button type="button" class="btn btn-outline-primary">Primary</button>
+          <button type="button" class="btn btn-outline-primary">Tasks</button>
+          <button type="button" class="btn btn-outline-primary">
+            Appointments
+          </button>
+          <button type="button" class="btn btn-outline-primary">Notex</button>
+          <button type="button" class="btn btn-outline-primary">Leads</button>
           <button
             type="button"
             class="btn btn-outline-primary"
             style="width: 33%"
           >
-            Primary
+            Candidates
           </button>
           <button
             type="button"
             class="btn btn-outline-primary"
             style="width: 33%"
           >
-            Primary
+            Contacts
           </button>
           <button
             type="button"
             class="btn btn-outline-primary"
             style="width: 33%"
           >
-            Primary
+            Companies
           </button>
           <button
             type="button"
             class="btn btn-outline-primary"
             style="width: 100%"
           >
-            Primary
+            Submissions
           </button>
           <h5>Delivery Methods</h5>
           <button
@@ -198,18 +198,23 @@ export default {
             class="btn btn-outline-primary"
             style="width: 50%"
           >
-            Primary
+            Email
           </button>
           <button
             type="button"
             class="btn btn-outline-primary"
             style="width: 50%"
           >
-            Primary
+            Slack
           </button>
-          <p>SMS (contact us to enable this method)</p>
-          <p>MS Teams (contact us to enable this method)</p>
-          <p>Zoom (contact us to enable this method)</p>
+          <div class-name="last-options">
+            <p>SMS (contact us to enable this method)</p>
+            <br />
+            <p>MS Teams (contact us to enable this method)</p>
+            <br />
+            <p>Zoom (contact us to enable this method)</p>
+            <br />
+          </div>
         </div>
       </div>
     </div>
@@ -225,5 +230,8 @@ h5 {
 }
 p {
   text-align: left;
+}
+.container {
+  padding-top: 100px;
 }
 </style>
