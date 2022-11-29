@@ -15,105 +15,99 @@
       <div class="col">
         1 of 3
         <div class="mb-3">
-          <label for="formGroupExampleInput" class="form-label"
-            >Example label</label
+          <label
+            type="text"
+            for="formGroupExampleInput"
+            class="form-label"
+            style="align-content: left"
+            >First Name</label
           >
           <input
             type="text"
             class="form-control"
             id="formGroupExampleInput"
-            placeholder="Example input placeholder"
+            placeholder="First Name"
           />
         </div>
         <div class="mb-3">
           <label for="formGroupExampleInput2" class="form-label"
-            >Another label</label
+            >Last Name</label
           >
           <input
             type="text"
             class="form-control"
             id="formGroupExampleInput2"
-            placeholder="Another input placeholder"
+            placeholder="Last Name"
           />
         </div>
         <div class="mb-3">
-          <label for="formGroupExampleInput" class="form-label"
-            >Example label</label
-          >
+          <label for="formGroupExampleInput" class="form-label">Title</label>
           <input
             type="text"
             class="form-control"
             id="formGroupExampleInput"
-            placeholder="Example input placeholder"
+            placeholder="Title"
           />
         </div>
         <div class="mb-3">
-          <label for="formGroupExampleInput2" class="form-label"
-            >Another label</label
-          >
+          <label for="formGroupExampleInput2" class="form-label">Role</label>
           <input
             type="text"
             class="form-control"
             id="formGroupExampleInput2"
-            placeholder="Another input placeholder"
+            placeholder="Role"
           />
         </div>
       </div>
       <div class="col">
         2 of 3 (wider)
         <div class="mb-3">
-          <label for="formGroupExampleInput" class="form-label"
-            >Example label</label
-          >
+          <label for="formGroupExampleInput" class="form-label">Email</label>
           <input
-            type="text"
+            type="email"
             class="form-control"
-            id="formGroupExampleInput"
-            placeholder="Example input placeholder"
+            id="Email"
+            placeholder="Enter a valid Email"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="formGroupExampleInput2" class="form-label">Phone</label>
+          <input
+            type="phone"
+            class="form-control"
+            id="Phone"
+            placeholder="Enter phone"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="formGroupExampleInput" class="form-label">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="Password"
+            placeholder="Enter your password"
           />
         </div>
         <div class="mb-3">
           <label for="formGroupExampleInput2" class="form-label"
-            >Another label</label
+            >Default Note Action</label
           >
           <input
             type="text"
             class="form-control"
-            id="formGroupExampleInput2"
-            placeholder="Another input placeholder"
-          />
-        </div>
-        <div class="mb-3">
-          <label for="formGroupExampleInput" class="form-label"
-            >Example label</label
-          >
-          <input
-            type="text"
-            class="form-control"
-            id="formGroupExampleInput"
-            placeholder="Example input placeholder"
+            id="Default Note Action"
+            placeholder="Client Submission"
           />
         </div>
         <div class="mb-3">
           <label for="formGroupExampleInput2" class="form-label"
-            >Another label</label
+            >Default Landing Page upon Login</label
           >
           <input
             type="text"
             class="form-control"
-            id="formGroupExampleInput2"
-            placeholder="Another input placeholder"
-          />
-        </div>
-        <div class="mb-3">
-          <label for="formGroupExampleInput2" class="form-label"
-            >Another label</label
-          >
-          <input
-            type="text"
-            class="form-control"
-            id="formGroupExampleInput2"
-            placeholder="Another input placeholder"
+            id="Default Landiing Page upon Login"
+            placeholder="Dashboard"
           />
         </div>
       </div>
@@ -175,4 +169,8 @@
   </div>
 </template>
 
-<style lang="scss"></style>
+<style>
+.mb-3 {
+  text-align: left;
+}
+</style>
