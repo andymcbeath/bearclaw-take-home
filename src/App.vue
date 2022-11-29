@@ -6,23 +6,29 @@ const toggleDark = useToggle(isDark);
 </script>
 
 <template>
-  <div class="dark">
-    <div class="min-h-screen bg-eelg dark:bg-tb text-white">
-      <div class="text-black pl-32 2xsl:lo-0 dark:divide-eelg dark:text-eelg">
+  <div class="Dark">
+    <div class="flex min-h-screen bg-eelg dark:bg-tb text-white">
+      <div
+        class="flex text-black pl-32 2xl:pl-0 dark:divide-eelg dark:text-eelg"
+      >
         <div class="container text-center">
           <div class="row">
             <div class="col">1 of 3</div>
             <div class="col-6">
               2 of 3 (wider)
               <h3>Edit User</h3>
-              <button
-                type="button"
-                class="btn btn-outline-primary px-4 bg-green-500"
+              <div class="form-check form-switch"></div>
+              <input
+                class="form-check-input"
+                type="checkbox"
+                role="switch"
+                id="flexSwitchCheckDefault"
                 @click="toggleDark()"
+              />
+              <label class="form-check-label" for="flexSwitchCheckDefault"
+                >Dark Mode</label
               >
-                Dark Mode
-              </button>
-              <p>isDark: {{ isDark }}</p>
+              <!-- <p>isDark: {{ isDark }}</p> -->
             </div>
 
             <div class="col">3 of 3</div>
@@ -207,9 +213,6 @@ const toggleDark = useToggle(isDark);
 </template>
 
 <style>
-div {
-  color: greenyellow;
-}
 .mb-3 {
   text-align: left;
 }
