@@ -112,7 +112,42 @@
           />
         </div>
       </div>
-      <div class="col">3 of 3</div>
+      <div class="col">
+        3 of 3
+        <h5>Alert Types</h5>
+        <button type="button" class="btn btn-outline-primary">Primary</button>
+        <button type="button" class="btn btn-outline-primary">Primary</button>
+        <button type="button" class="btn btn-outline-primary">Primary</button>
+        <button type="button" class="btn btn-outline-primary">Primary</button>
+        <button
+          type="button"
+          class="btn btn-outline-primary"
+          style="width: 33%"
+        >
+          Primary
+        </button>
+        <button
+          type="button"
+          class="btn btn-outline-primary"
+          style="width: 33%"
+        >
+          Primary
+        </button>
+        <button
+          type="button"
+          class="btn btn-outline-primary"
+          style="width: 33%"
+        >
+          Primary
+        </button>
+        <button
+          type="button"
+          class="btn btn-outline-primary"
+          style="width: 100%"
+        >
+          Primary
+        </button>
+      </div>
     </div>
   </div>
 </template>
