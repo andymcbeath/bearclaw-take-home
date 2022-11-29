@@ -1,4 +1,10 @@
-<script></script>
+<script setup>
+import { useDark, useToggle } from "@vueuse/core";
+
+const isDark = useDark();
+const toggleDark = useToggle(isDark);
+</script>
+
 <template>
   <div class="container text-center">
     <div class="row">
@@ -6,7 +12,14 @@
       <div class="col-6">
         2 of 3 (wider)
         <h3>Edit User</h3>
-        <button type="button" class="btn btn-outline-primary">Primary</button>
+        <button
+          type="button"
+          class="btn btn-outline-primary"
+          @click="toggleDark()"
+        >
+          Dark Mode
+        </button>
+        <p>isDark: {{ isDark }}</p>
       </div>
 
       <div class="col">3 of 3</div>
@@ -169,8 +182,20 @@
   </div>
 </template>
 
-<style>
+<style scoped>
+html.dark {
+  color-scheme: dark;
+}
 .mb-3 {
   text-align: left;
 }
+h5 {
+  text-align: left;
+}
+p {
+  text-align: left;
+}
+/* body {
+  @apply bg-late-50 text-slate-800 dark:bg-slate-800 dark:text-slate-50}
+} */
 </style>
