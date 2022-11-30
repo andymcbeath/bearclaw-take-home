@@ -38,11 +38,13 @@ export default {
   <div class="container">
     <div class="row">
       <div class="col">
-        <img
-          src="https://www.dictionary.com/e/wp-content/uploads/2018/03/rickrolling-300x300.jpg"
-          class="img-thumbnail"
-          alt="..."
-        />
+        <div class="picture">
+          <img
+            src="@/assets/never-gonna-give.png"
+            class="img-thumbnail"
+            alt="..."
+          />
+        </div>
       </div>
       <div class="col-6">
         <div class="edit-user">
@@ -168,57 +170,47 @@ export default {
             />
           </div>
         </div>
-        <div class="col">
-          <h5>Alert Types</h5>
-          <button type="button" class="btn btn-outline-primary">Tasks</button>
-          <button type="button" class="btn btn-outline-primary">
-            Appointments
-          </button>
-          <button type="button" class="btn btn-outline-primary">Notex</button>
-          <button type="button" class="btn btn-outline-primary">Leads</button>
-          <button
-            type="button"
-            class="btn btn-outline-primary"
-            style="width: 33%"
-          >
-            Candidates
-          </button>
-          <button
-            type="button"
-            class="btn btn-outline-primary"
-            style="width: 33%"
-          >
-            Contacts
-          </button>
-          <button
-            type="button"
-            class="btn btn-outline-primary"
-            style="width: 33%"
-          >
-            Companies
-          </button>
-          <button
-            type="button"
-            class="btn btn-outline-primary"
-            style="width: 100%"
-          >
-            Submissions
-          </button>
-          <h5>Delivery Methods</h5>
-          <button
-            type="button"
-            class="btn btn-outline-primary"
-            style="width: 50%"
-          >
-            Email
-          </button>
-          <button
-            type="button"
-            class="btn btn-outline-primary"
-            style="width: 50%"
-          >
-            Slack
-          </button>
+        <div id="buttons" class="col">
+          <div class="d-grid gap-2 d-md-block">
+            <h5>Alert Types</h5>
+            <button type="button" class="btn btn-outline-primary">Tasks</button>
+            <button type="button" class="btn btn-outline-primary">
+              Appointments
+            </button>
+            <button type="button" class="btn btn-outline-primary">Notes</button>
+            <button type="button" class="btn btn-outline-primary">Leads</button>
+            <button type="button" class="btn btn-outline-primary">
+              Candidates
+            </button>
+            <button type="button" class="btn btn-outline-primary">
+              Contacts
+            </button>
+            <button type="button" class="btn btn-outline-primary">
+              Companies
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-primary"
+              style="width: 100%"
+            >
+              Submissions
+            </button>
+            <h5>Delivery Methods</h5>
+            <button
+              type="button"
+              class="btn btn-outline-primary"
+              style="width: 50%"
+            >
+              Email
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-primary"
+              style="width: 50%"
+            >
+              Slack
+            </button>
+          </div>
           <div class-name="last-options">
             <p>SMS (contact us to enable this method)</p>
             <br />
@@ -234,13 +226,6 @@ export default {
 </template>
 
 <style>
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-  color: greenyellow;
-}
 .toggle-seperator {
   padding-left: 4%;
   padding-right: 1%;
@@ -266,5 +251,22 @@ p {
 }
 h6 {
   padding-left: 2%;
+}
+img.img-thumbnail {
+  border-color: rgba(0, 0, 0, 0.847);
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  border-width: 15px;
+  color: rgba(0, 0, 0, 0.847);
+}
+.picture {
+  color: black;
+  background-color: black;
+  border-color: rgba(0, 0, 0, 0.847);
+  color: rgba(0, 0, 0, 0.847);
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
 }
 </style>
