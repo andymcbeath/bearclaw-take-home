@@ -59,18 +59,12 @@ export default {
             <span class="slider round"></span>
           </label>
           <h6>DARK</h6>
-          <h6 class="toggle-seperator">STABLE</h6>
-          <div class="form-check form-switch">
-            <input
-              class="form-check-input"
-              type="checkbox"
-              role="switch"
-              id="flexSwitchCheckDefault"
-            />
-            <label class="form-check-label" for="flexSwitchCheckDefault"
-              >BETA</label
-            >
-          </div>
+          <h6>STABLE</h6>
+          <label class="switch">
+            <input type="checkbox" @click="toggleCheckbox" />
+            <div class="slider round"></div>
+          </label>
+          <h6>BETA</h6>
         </div>
       </div>
       <div class="col">Re-Connect Linkedin Profile</div>
@@ -240,9 +234,12 @@ export default {
 </template>
 
 <style>
-switch {
-  height: 20px;
-  color: black;
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  color: greenyellow;
 }
 .toggle-seperator {
   padding-left: 4%;
