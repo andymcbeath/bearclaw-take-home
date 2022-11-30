@@ -3,6 +3,7 @@ export default {
   data: function () {
     return {
       darkMode: false,
+      checked: true,
     };
   },
   dark() {
@@ -34,7 +35,7 @@ export default {
 </script>
 
 <template>
-  <div class="container text-center">
+  <div class="container">
     <div class="row">
       <div class="col">
         <img
@@ -44,16 +45,33 @@ export default {
         />
       </div>
       <div class="col-6">
-        <h3>Edit User</h3>
-        <button type="button" class="btn btn-outline-primary">
-          Submit Changes
-        </button>
-        <h6>Light</h6>
-        <label class="switch">
-          <input type="checkbox" onchange="darkMode()" />
-          <span class="slider round"></span>
-        </label>
-        <h6>Dark</h6>
+        <div class="edit-user">
+          <h1>Edit User</h1>
+        </div>
+        <br />
+        <div class="middle-top">
+          <button type="button" class="btn btn-outline-primary">
+            Submit Changes
+          </button>
+          <h6>LIGHT</h6>
+          <label class="switch">
+            <input type="checkbox" onchange="darkMode()" />
+            <span class="slider round"></span>
+          </label>
+          <h6>DARK</h6>
+          <h6 class="toggle-seperator">STABLE</h6>
+          <div class="form-check form-switch">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              role="switch"
+              id="flexSwitchCheckDefault"
+            />
+            <label class="form-check-label" for="flexSwitchCheckDefault"
+              >BETA</label
+            >
+          </div>
+        </div>
       </div>
       <div class="col">Re-Connect Linkedin Profile</div>
       <div class="row">
@@ -222,6 +240,17 @@ export default {
 </template>
 
 <style>
+switch {
+  height: 20px;
+  color: black;
+}
+.toggle-seperator {
+  padding-left: 4%;
+  padding-right: 1%;
+}
+.edit-user {
+  font-size: xx-large;
+}
 .mb-3 {
   text-align: left;
 }
@@ -230,8 +259,15 @@ h5 {
 }
 p {
   text-align: left;
+  color: white;
 }
 .container {
   padding-top: 100px;
+}
+.middle-top {
+  display: flex;
+}
+h6 {
+  padding-left: 2%;
 }
 </style>
