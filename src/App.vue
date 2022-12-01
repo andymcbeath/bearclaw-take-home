@@ -69,7 +69,13 @@ export default {
           <h6>BETA</h6>
         </div>
       </div>
-      <div class="col">Re-Connect Linkedin Profile</div>
+      <div class="col">
+        <button type="button" class="btn btn-outline-light">
+          PROFILE CONNECTED
+        </button>
+        <div></div>
+        Re-Connect Linkedin Profile
+      </div>
       <div class="row">
         <div class="col">
           <div class="mb-3">
@@ -171,26 +177,34 @@ export default {
           </div>
         </div>
         <div id="buttons" class="col">
-          <div class="d-grid gap-2 d-md-block">
+          <div class="d-grid mw-100 gap-2 mr-2 d-md-block">
             <h5>Alert Types</h5>
-            <button type="button" class="btn btn-outline-primary">Tasks</button>
-            <button type="button" class="btn btn-outline-primary">
+            <button type="button" class="btn btn-outline-light">Tasks</button>
+            <button type="button" class="btn btn-outline-light">
               Appointments
             </button>
-            <button type="button" class="btn btn-outline-primary">Notes</button>
-            <button type="button" class="btn btn-outline-primary">Leads</button>
-            <button type="button" class="btn btn-outline-primary">
-              Candidates
-            </button>
-            <button type="button" class="btn btn-outline-primary">
-              Contacts
-            </button>
-            <button type="button" class="btn btn-outline-primary">
-              Companies
-            </button>
+            <button type="button" class="btn btn-outline-light">Notes</button>
             <button
               type="button"
-              class="btn btn-outline-primary"
+              class="btn btn-outline-light"
+              style="margin-right: 4%"
+            >
+              Leads
+            </button>
+            <br />
+            <button type="button" class="btn btn-outline-light">
+              Candidates
+            </button>
+            <button type="button" class="btn btn-outline-light bg-blue">
+              Contacts
+            </button>
+            <button type="button" class="btn btn-outline-light">
+              Companies
+            </button>
+            <br />
+            <button
+              type="button"
+              class="btn btn-outline-light"
               style="width: 100%"
             >
               Submissions
@@ -198,14 +212,14 @@ export default {
             <h5>Delivery Methods</h5>
             <button
               type="button"
-              class="btn btn-outline-primary"
+              class="btn btn-outline-light"
               style="width: 50%"
             >
               Email
             </button>
             <button
               type="button"
-              class="btn btn-outline-primary"
+              class="btn btn-outline-light"
               style="width: 50%"
             >
               Slack
@@ -226,6 +240,22 @@ export default {
 </template>
 
 <style>
+.buttons {
+  text-align: justify;
+}
+.buttons:after {
+  content: "";
+  display: inline-block;
+  width: 99.5%; /* generates an extra transparent line */
+}
+/* makeup*/
+.buttons {
+  min-width: 45em;
+  padding: 1.2em 1em 0;
+  box-shadow: 0 0 5px;
+  margin: 1em;
+  border-radius: 0.25em;
+}
 .toggle-seperator {
   padding-left: 4%;
   padding-right: 1%;
@@ -268,5 +298,8 @@ img.img-thumbnail {
   border-radius: 50%;
   width: 150px;
   height: 150px;
+}
+#buttons {
+  justify-content: space-between;
 }
 </style>
